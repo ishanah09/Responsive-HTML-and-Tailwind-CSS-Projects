@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myTunes Website</title>
+  <link rel="stylesheet" href="./output.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+
+
+<body class="scroll-smooth min-h-screen">
+
+
+  <header class="bg-[#270080] sticky top-0 z-10 mx-auto">
+    <nav class="py-5 px-8 flex items-center justify-between max-w-[1200px] mx-auto">
+   
+      <section class="scroll-m-[50px] text-3xl text-white font-semibold">myTunes</section>
+
+  <section >
+
+    <ul class=" gap-6 font-light text-[1.5rem] hidden md:flex">
+      <a href="#hero">
+        <li class="text-white hover:border-b-1 hover:border-b-white  ">Overview</li>
+      </a>
+      <a href="#music">
+        <li class="text-white hover:border-b-1 hover:border-b-white  ">Music</li>
+      </a>
+      <a href="#video">
+        <li class="text-white hover:border-b-1 hover:border-b-white  ">Video</li>
+      </a>
+      <a href="#gift">
+        <li class="text-white hover:border-b-1 hover:border-b-white  ">Gift Cards</li>
+      </a>
+    </ul>
+  </section>
+
+    </nav>
+  </header>
+
+
+
+
+  <main>
+
+    <section class="min-h-screen bg-[url(./images/hero_image.png)] bg-center bg-no-repeat bg-cover flex items-center justify-center p-6" id="hero">
+      <div class="flex flex-col items-center justify-center gap-8 text-white max-w[1200px] mx-auto">
+        <h1 class="text-[clamp(2.25rem,10vw,5rem)]">my Tunes</h1>
+        <h2 class=" text-[clamp(1rem,5vw,2.5rem)]">Your music, movies, and TV shows take center stage.</h2>
+        <p class="font-light">
+          myTunes is the best way to organize and enjoy the music, movies, and
+          TV shows you already have — and shop for the ones you want. Enjoy
+          all the entertainment myTunes has to offer on your Mac and PC.
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="bg-[#281154] text-white p-6" id="music">
+      <div class="max-w-[1200px] mx-auto flex flex-col items-center text-center gap-8">
+        <h3 class="text-[32px] font-semibold">Music</h3>
+        <p>
+          Stream over 45 million songs, ad-free. Or download albums and tracks
+          to listen to offline. All the music in your personal myTunes library
+          — no matter where it came from — lives right alongside the Orange
+          Music catalog. Start your free three-month trial with no commitment,
+          and cancel anytime.
+        </p>
+        <button class=" bg-[#dc0000] text-white p-3 rounded-xl border-none hover:opacity-80 hover:cursor-pointer hover:scale-105 hover:duration-300 hover:ease-in-out ">Strat Your Trail Now</button>
+        <p class="font-light">
+          Orange Music is available in myTunes, and for iOS and Android
+          devices.
+        </p>
+
+        <figure class="w-[85%] p-4 mt-[-30vw] relative top-[30vw]">
+          <img src="./images/ipad-iphone.png" alt="" class="w-full"/>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <section class="flex items-center p-6">
+      <div class="max-w-[1200px] mx-auto flex flex-col justify-center items-center mt-[33vw] gap-9 mb-12 ">
+        <h3 class="font-semibold text-xl">The movie and TV collection you always wished for. Granted.</h3>
+        <p class="font-light">
+          With over 100,000 movies and TV shows to choose from, there’s always
+          something great to watch on myTunes and if you watch on Orange TV
+          4K, you’ll be able to enjoy a tremendous selection of your favorite
+          content in 4K HDR. So get ready to enjoy episodes of your favorite
+          TV shows or hit movies you’ve been waiting to see — anytime,
+          anywhere. Just tap to play, or even download if you’re going
+          somewhere you won’t have Wi-Fi.
+        </p>
+        <button class="bg-[#270084] text-white p-3 rounded-xl border-none hover:opacity-80 hover:cursor-pointer hover:scale-105 hover:duration-300 hover:ease-in-out">Read more</button>
+        <figure class="w-[85%] p-4">
+          <img src="images/mac.png" alt="macbook" class="w-full"/>
+        </figure>
+      </div>
+    </section>
+
+
+    <section class="min-h-screen bg-[url(./images/video.png)] bg-center bg-cover bg-no-repeat flex items-center justify-center p-6" id="video">
+      <div class="max-w-[1200px] flex flex-col items-center justify-center gap-6 text-white text-center">
+        <h4 class="text-xl font-semibold">A world of entertainment. Available wherever you are.</h4>
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
+          non velit repellat alias saepe inventore repellendus? Molestias
+          suscipit eos tempora? Quae quaerat cumque in veritatis impedit
+          dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
+          totam ad quas? Ipsam laudantium soluta delectus!
+        </p>
+      </div>
+    </section>
+
+
+    <section class="flex" id="gift">
+      <div class="max-w-[1200px] mx-auto flex flex-col items-center justify-between gap-8 p-6 lg:flex-row">
+        <figure class="p-4 w-[max(60%,150px)]">
+          <img src="./images/gift_card.png" alt="" class="w-full"/>
+        </figure>
+        <div class="w-full flex flex-col justify-evenly items-start text-justify gap-6 p-6">
+          <h4 class="font-bold text-xl">Gift Card</h4>
+          <p class="font-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            cum explicabo, excepturi eaque commodi minima quas repellendus
+            assumenda facere hic, earum quasi iste asperiores molestiae
+            obcaecati laborum, voluptatum alias velit cupiditate! Quae soluta
+            sapiente quasi, iusto quam magnam doloribus natus quod eius, rerum
+            asperiores aspernatur. Illum neque sequi odit fuga.
+          </p>
+          <p class="font-light">Already have an Orange MyTunes Music Gift Card?</p>
+
+          <button class="bg-[#270082] text-white p-3 rounded-xl border-none hover:opacity-80 hover:cursor-pointer hover:scale-105 hover:duration-300 hover:ease-in-out">Redeem</button>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+  <footer class="bg-[#1b0058] text-white">
+
+    <div class="flex flex-col items-start justify-center gap-8 py-10 px-6 md:flex-row md:items-center md:justify-between max-w-[1200px] mx-auto">
+      <section class="flex flex-col items-start justify-center gap-3">
+        <h4 class="text-xl mb-3 py-2 px-0 border-b-1 border-white">Shop & Learn</h4>
+        <ul>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Music</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Movies</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Shows</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Apps</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Gift Cards</li>
+        </ul>
+      </section>
+      <section class="flex flex-col items-start justify-center gap-3">
+        <h4 class="text-xl mb-3 py-2 px-0 border-b-1 border-white">Orange Store</h4>
+        <ul>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Find a Store</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Today at Orange</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Financing</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Orange Camp</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Order Status</li>
+        </ul>
+      </section>
+      <section class="flex flex-col items-start justify-center gap-3">
+        <h4 class="text-xl mb-3 py-2 px-0 border-b-1 border-white">Education & Business</h4>
+        <ul>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Orange & Education</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Shop for Collage</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Orange & Business</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Shop for Business</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Jobs</li>
+        </ul>
+      </section>
+      <section class="flex flex-col items-start justify-center gap-3">
+        <h4 class="text-xl mb-3 py-2 px-0 border-b-1 border-white">About Orange</h4>
+        <ul>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Newsroom</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Orange Leadership</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Investors</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Envents</li>
+          <li class="text-start  tracking-wider cursor-pointer mb-1 font-light">Contact Orange</li>
+        </ul>
+      </section>
+    </div>
+
+
+    <section class="bg-[#270080] flex items-center justify-center p-5 text-white text-[16px]">
+      <p>Copyright © 2022 Do Some Coding</p>
+    </section>
+
+
+  </footer>
+
+
+
+</body>
+
+
+</html>

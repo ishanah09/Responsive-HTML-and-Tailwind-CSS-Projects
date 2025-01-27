@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body  class="bg-gradient-to-r from-green-300 to bg-green-800 flex items-center justify-center min-h-screen">
+    
+  
+   
+  
+    <main
+      class="bg-white p-6 rounded-none flex flex-col gap-6 w-full sm:w-[min(600px,90%)] sm:rounded-2xl"
+    >
+      <header class="text-[24px] text-center font-semibold sm:text-[32px]">
+        Job Application <span class="text-[20px]">(Web)</span>
+      </header>
+
+      <form class="flex flex-col sm:grid sm:grid-cols-2 gap-6 ">
+        <div>
+          <label for="first-name" class="text-[16px]">First Name </label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Enter First Name..."
+            name="first-name"
+            class="h-8 w-full p-2 border-1 placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="flex-col justify-center">
+          <label for="last-name" class="text-[16px]">Last Name </label>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Enter Last Name..."
+            name="last-name"
+            class="h-8 w-full p-2 border-1 text-[14px] placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="email details">
+          <label for="email" class="text-[16px]">Email </label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter Email ..."
+            name="email"
+            class="h-8 w-full p-2 border-1 text-[14px] placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="job-role details">
+          <label for="job_role" class="text-[16px]"> Job Role </label>
+          <select
+            id="job_role"
+            name="job_role"
+            class="h-8 w-full border-1 text-[14px] placeholder:text-[14px]"
+          >
+            <option value="" class="text-[14px]">Select Job Role</option>
+            <option value="frontend" class="text-[14px]">
+              Frontend Developer
+            </option>
+            <option value="backend" class="text-[14px]">
+              Backend Developer
+            </option>
+            <option value="full_stack" class="text-[14px]">
+              Full Stack Developer
+            </option>
+            <option value="ui_ux" class="text-[14px]">UI UX Designer</option>
+          </select>
+        </div>
+
+        <div class="col-span-2">
+          <label for="address" class="text-[16px]">Address </label>
+          <textarea
+            name="address"
+            id="address"
+            placeholder="Enter Address"
+            class="border-1 h-16 p-2 w-full resize-none text-[14px] placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          ></textarea>
+        </div>
+
+        <div class="city-name details">
+          <label for="city-name" class="text-[16px]">City Name</label>
+          <input
+            type="text"
+            id="city-name"
+            placeholder="Enter  City Name..."
+            class="h-8 w-full p-2 border-1 placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="pincode details">
+          <label for="pincode" class="text-[16px]">Pincode</label>
+          <input
+            type="number"
+            id="pincode"
+            placeholder="Enter  Pincode..."
+            class="h-8 w-full p-2 border-1 placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="date details">
+          Date
+          <label for="date"></label>
+          <input
+            type="date"
+            id="date"
+            value="2023-01-01"
+            class="h-8 w-full p-2 border-1 text-[14px] outline-none focus:border-[#9acd32]"
+          />
+        </div>
+
+        <div class="upload details">
+          <label for="cv" class="text-[16px]">Upload Your Cv</label>
+          <div class="p-1 rounded-[5px] border-1 border-black">
+            <input
+              type="file"
+              id="cv"
+              class="h-8 w-full p-2 text-[14px] placeholder:text-[14px] outline-none focus:border-[#9acd32]"
+            />
+          </div>
+        </div>
+      </form>
+
+      <footer class="self-center sm:self-end">
+        <button
+          type="submit"
+          class="p-2 rounded-[8px] text-white border-none bg-red-600 text-[14px] hover:cursor-pointer hover:text-black hover:bg-red-300"
+        >
+          Apply Now
+        </button>
+      </footer>
+
+    </main>
+    
+  </body>
+</html>

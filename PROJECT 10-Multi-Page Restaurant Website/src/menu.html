@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body
+    class="bg-gradient-to-bl from-[rgb(254,233,200)] to-30% to-white min-h-screen"
+  >
+    <header class="bg-transparent h-[10vh] flex items-center p-4 w-full">
+      <nav
+        class="max-w-[1400px] mx-auto w-full flex items-center justify-between gap-4"
+      >
+        <div class="flex items-center justify-between gap-6">
+          <a
+            href="./index.html"
+            class="text-[16px] text-black transition-all duration-300 hover:text-[rgb(239,120,30)]"
+            >Home</a
+          >
+          <a
+            href="./menu.html"
+            class="text-[16px] text-black transition-all duration-300 hover:text-[rgb(239,120,30)]"
+            >Menu</a
+          >
+          <a
+            href="./reserve.html"
+            class="text-[16px] text-black transition-all duration-300 hover:text-[rgb(239,120,30)]"
+            >Reservation</a
+          >
+        </div>
+
+        <div class="flex items-center justify-between gap-10">
+          <div class="hidden border-b-2 pb-2.5 border-b-black md:block">
+            <input
+              type="text"
+              placeholder="Search"
+              class="text-[14px] bg-transparent outline-none"
+            />
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass text-[18px] text-black"></i
+            ></a>
+          </div>
+
+          <div>
+            <a
+              href="./login.html"
+              class="text-black text-[18px] cursor-pointer flex items-center justify-center gap-2 border-none rounded-3xl p-2 bg-[rgba(239,121,30,0.6)]"
+            >
+              <i class="fa-solid fa-user"></i>
+              <span class="hidden md:block">user</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-12">
+      <div class="max-w-[1400px] mx-auto">
+        <h1
+          class="text-[clamp(1.5rem,6.6vw,2.5rem)] text-center mb-12 font-serif font-bold"
+        >
+          Our Delicious Food
+        </h1>
+
+        <div
+          class="flex flex-wrap items-center justify-evenly gap-8 py-4 px-8 lg:justify-between"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-6 w-[90%] max-w-[275px] p-6 rounded-xl shadow-[0px_0px_75px_rgba(239,120,30,0.4)] mb-12 cursor-pointer transition-all duration-400 ease-in-out hover:scale-110"
+          >
+            <div
+              class="w-[90%] max-w-[200px] h-[200px] transition-all duration-500 ease-in-out hover:scale-120"
+            >
+              <img
+                src="./images/img3.png"
+                alt="dish-image"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mb-6">
+              <h3 class="text-xl font-bold">Dish Name</h3>
+              <p class="line-clamp-3 overflow-hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore saepe quisquam nobis, magnam ut expedita animi est
+                voluptate sunt a eaque laudantium minima, corrupti possimus!
+              </p>
+              <span class="text-[rgb(241,147,73)] font-bold text-xl">$100</span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center gap-6 w-[90%] max-w-[275px] p-6 rounded-xl shadow-[0px_0px_75px_rgba(239,120,30,0.4)] mb-12 cursor-pointer transition-all duration-400 ease-in-out hover:scale-110"
+          >
+            <div
+              class="w-[90%] max-w-[200px] h-[200px] transition-all duration-500 ease-in-out hover:scale-120"
+            >
+              <img
+                src="./images/img4.png"
+                alt="dish-image"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mb-6">
+              <h3 class="text-xl font-bold">Dish Name</h3>
+              <p class="line-clamp-3 overflow-hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore saepe quisquam nobis, magnam ut expedita animi est
+                voluptate sunt a eaque laudantium minima, corrupti possimus!
+              </p>
+              <span class="text-[rgb(241,147,73)] font-bold text-xl">$125</span>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-6 w-[90%] max-w-[275px] p-6 rounded-xl shadow-[0px_0px_75px_rgba(239,120,30,0.4)] mb-12 cursor-pointer transition-all duration-400 ease-in-out hover:scale-110"
+          >
+            <div
+              class="w-[90%] max-w-[200px] h-[200px] transition-all duration-500 ease-in-out hover:scale-120"
+            >
+              <img
+                src="./images/img5.png"
+                alt="dish-image"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mb-6">
+              <h3 class="text-xl font-bold">Dish Name</h3>
+              <p class="line-clamp-3 overflow-hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore saepe quisquam nobis, magnam ut expedita animi est
+                voluptate sunt a eaque laudantium minima, corrupti possimus!
+              </p>
+              <span class="text-[rgb(241,147,73)] font-bold text-xl">$150</span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center gap-6 w-[90%] max-w-[275px] p-6 rounded-xl shadow-[0px_0px_75px_rgba(239,120,30,0.4)] mb-12 cursor-pointer transition-all duration-400 ease-in-out hover:scale-110"
+          >
+            <div
+              class="w-[90%] max-w-[200px] h-[200px] transition-all duration-500 ease-in-out hover:scale-120"
+            >
+              <img
+                src="./images/img6.png"
+                alt="dish-image"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4 mb-6">
+              <h3 class="text-xl font-bold">Dish Name</h3>
+              <p class="line-clamp-3 overflow-hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore saepe quisquam nobis, magnam ut expedita animi est
+                voluptate sunt a eaque laudantium minima, corrupti possimus!
+              </p>
+              <span class="text-[rgb(241,147,73)] font-bold text-xl">$100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t-1 border-t-gray-400 pt-12">
+      <section
+        class="flex flex-col max-w-[1000px] mx-auto mb-12 px-8 flex-wrap items-start justify-evenly gap-8 md:flex-row"
+      >
+        <div class="footer-list">
+          <ul>
+            <h3 class="mb-4 font-bold text-2xl">Main Menu</h3>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)]"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)]"
+            >
+              <a href="#">Menu</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)]"
+            >
+              <a href="#">Event</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)]"
+            >
+              <a href="#">Offers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <ul>
+            <h3 class="mb-4 font-bold text-2xl">Information</h3>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              <a href="#">Order & Return</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              <a href="#">Videos</a>
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              <a href="#">Reservation</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <ul>
+            <h3 class="mb-4 font-bold text-2xl">Address</h3>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              New Delhi,India
+            </li>
+            <li
+              class="text-[15px] text-gray-400 mb-4 transition-all duration-300 ease-in-out hover:text-[rgb(239,121,30)] font-medium"
+            >
+              9:00AM - 11:00pm
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="text-center py-6 px-3 bg-[rgba(239,121,30,0.3)] font-medium"
+      >
+        <p>Copyright &copy;2024 Ishan Ahmad | All Rights Reserved</p>
+      </section>
+    </footer>
+  </body>
+</html>
