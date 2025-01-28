@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./output.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="font-sans min-h-screen">
+    
+    <header>
+      <nav
+        class="absolute w-full bg-transparent flex items-center justify-start p-5 whitespace-nowrap md:justify-around"
+      >
+        <div
+          class="hidden items-center justify-center gap-3 text-[15px] text-white md:flex"
+        >
+          <i class="fa-solid fa-mobile-screen text-[25px]"></i>
+
+          <p>Get the app</p>
+        </div>
+
+        <div class="hidden md:flex">
+          <ul class="flex items-center justify-center gap-9">
+            <li>
+              <a href="#" class="text-white text-xl">Investor Relations</a>
+            </li>
+            <li><a href="#" class="text-white text-xl">Add Restaurant</a></li>
+            <li><a href="#" class="text-white text-xl">Log in</a></li>
+            <li><a href="#" class="text-white text-xl">Sign up</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="flex items-center justify-start text-2xl text-red-600 rounded-full p-3 border-1 border-white md:hidden"
+        >
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="h-[60vh] bg-[url(./assets/images/81f3ff974d82520780078ba1cfbd453a1583259680.avif)] bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center gap-6 p-5 pt-10"
+      >
+        <div class="w-[clamp(150px,30vw,300px)]">
+          <img src="./assets/images/logo.png" alt="logo" class="w-full" />
+        </div>
+
+        <div
+          class="text-white text-[clamp(20px,4vw,36px)] leading-normal tracking-wider"
+        >
+          Discover the best food & drinks in Delhi NCR
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center bg-transparent md:bg-white p-0 gap-4 md:gap-0 md:p-[17px_15px] w-[min(100%,768px)] rounded-xl"
+        >
+          <div
+            class="flex w-full md:w-[35%] mr-0 md:mr-[15px] p-[17px_15px] md:p-0 rounded-xl md:rounded-none gap-[10px] bg-white"
+          >
+            <i
+              class="fa-solid fa-location-dot text-[rgb(255,126,139)] text-[18px] cursor-pointer"
+            ></i>
+
+            <input
+              type="text"
+              placeholder="Ywca,Ashoka Road,Hanuman Road Area,Connaught Place,New Delhi,Delhi"
+              class="w-full outline-none text-[14px]"
+            />
+
+            <i
+              class="fa-solid fa-chevron-down text-[rgb(255,126,139)] text-[18px] cursor-pointer"
+            ></i>
+          </div>
+
+          <div
+            class="bg-white md:bg-transparent w-[100%] md:bg-[65%] flex gap-[15px] p-[17px_15px] md:p-0 rounded-xl md:rounded-none"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass text-[18px] text-gray-400 cursor-pointer pl-4 border-l-2 border-l-gray-200"
+            ></i>
+            <input
+              type="text"
+              placeholder="Search for a restautant,cuisine or a dish"
+              class="w-full outline-none text-[14px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full relative p-[40px_10px_30px]">
+        <div
+          class="relative max-w-[1100px] mx-auto flex items-center justify-between gap-[10px]"
+        >
+          <div
+            class="relative w-full h-[180px] border-1 border-gray-200 rounded-xl overflow-hidden md:h-[240px]"
+          >
+            <div class="w-full h-full">
+              <img
+                src="./assets/images/e5b8785c257af2a7f354f1addaf37e4e1647364814.avif"
+                alt=""
+                class="w-full h-full"
+              />
+            </div>
+            <div
+              class="absolute bottom-0 bg-white w-full p-[10px] pl-[15px] rounded-b-xl font-normal"
+            >
+              <h4>Order Online</h4>
+              <p
+                class="text-[clamp(11px,1.5vw,16px)] font-normal whitespace-nowrap overflow-hidden"
+              >
+                Stay home and order on your doorstep
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full h-[180px] border-1 border-gray-200 rounded-xl overflow-hidden md:h-[240px]"
+          >
+            <div class="w-full h-full">
+              <img
+                src="./assets/images/d026b357feb0d63c997549f6398da8cc1647364915.avif"
+                alt=""
+                class="w-full h-full"
+              />
+            </div>
+            <div
+              class="absolute bottom-0 bg-white w-full p-[10px] pl-[15px] rounded-b-xl font-normal"
+            >
+              <h4>Dining</h4>
+              <p
+                class="text-[clamp(11px,1.5vw,16px)] font-normal whitespace-nowrap overflow-hidden"
+              >
+                View the city's favorite dining venues
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full h-[180px] border-1 border-gray-200 rounded-xl overflow-hidden md:h-[240px] hidden md:block"
+          >
+            <div class="w-full h-full">
+              <img
+                src="./assets/images/d9d80ef91cb552e3fdfadb3d4f4379761647365057.avif"
+                alt=""
+                class="w-full h-full"
+              />
+            </div>
+            <div
+              class="absolute bottom-0 bg-white w-full p-[10px] pl-[15px] rounded-b-xl font-normal"
+            >
+              <h4>Nightlife and Clubs</h4>
+              <p
+                class="text-[clamp(11px,1.5vw,16px)] font-normal whitespace-nowrap overflow-hidden"
+              >
+                Explore the city's top nightlife outlets
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full p-[40px_15px]">
+        <div class="max-w-[1100px] mx-auto">
+          <div
+            class="text-[clamp(16px,6.5vw,32px)] mb-[30px] text-[rgb(54,54,54)] font-normal"
+          >
+            Popular localities in and around Delhi NCR
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row justify-center flex-wrap gap-x-[20px] gap-[15px] "
+          >
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Connaught Place</p>
+                <span class="text-[15px] font-normal">252 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Sector 29</p>
+                <span class="text-[15px] font-normal">144 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Sector 18, Noida</p>
+                <span class="text-[15px] font-normal">205 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Rajouri Garden</p>
+                <span class="text-[15px] font-normal">296 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Saket</p>
+                <span class="text-[15px] font-normal">307 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">DLF Cyber City</p>
+                <span class="text-[15px] font-normal">153 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">Golf Course Road</p>
+                <span class="text-[15px] font-normal">154 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-between rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <div class="text">
+                <p class="text-[20px] mb-[10px] font-light">DLF Phase 4</p>
+                <span class="text-[15px] font-normal">221 Places</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div
+              class="flex items-center justify-center rounded-lg border-1 border-gray-300 shadow-lg w-full sm:w-[30%] gap-3 p-4 cursor-pointer hover:shadow-xl"
+            >
+              <p class="text-[20px] mb-[10px] font-light">see more</p>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <section class="bg-[#fffbf7] w-full p-[40px_10px]">
+        <div class="max-w-[900px] mx-auto flex items-center justify-center">
+          <div class="hidden md:block w-[50%]">
+            <img
+              src="./assets/images/phone-image.avif"
+              alt="phone-image"
+              class="w-[80%]"
+            />
+          </div>
+
+          <div
+            class="flex justify-center flex-col max-w-[500px] w-full md:w-[50%]"
+          >
+            <div class="about">
+              <p class="text-[clamp(30px,4vw,44px)] text-[#1c1c1c mb-4]">
+                Get the Zomato app
+              </p>
+              <span class="text-[16px] text-[#363636] mb-6">
+                We will send you a link, open it on your phone to download the
+                app</span
+              >
+            </div>
+
+            <div class="mt-6 flex mb-[20px]">
+              <div class="mr-19">
+                <input
+                  type="radio"
+                  id="email"
+                  name="email"
+                  style="accent-color: rgb(239, 79, 95)"
+                />
+                <label for="email" class="text-[16px] ml-[5px]">Email</label>
+              </div>
+
+              <div class="mr-19">
+                <input
+                  type="radio"
+                  id="email"
+                  name="email"
+                  style="accent-color: rgb(239, 79, 95)"
+                />
+                <label for="email" class="text-[16px] ml-[5px]">Phone</label>
+              </div>
+            </div>
+
+            <div class="flex gap-[5px] mb-[20px]">
+              <input
+                type="text"
+                placeholder="Email"
+                class="p-[13px_12px] rounded-lg border-1 border-[#9c9c9c] w-full"
+              />
+              <button
+                class="bg-[#ef4f5f] text-white border-none text-[16px] tracking-wide p-[12px_16px] whitespace-nowrap rounded-lg"
+              >
+                Share App Link
+              </button>
+            </div>
+
+            <div>
+              <div class="text-[#9c9c9c] text-[14px] mb-4">
+                Download app from
+              </div>
+              <div class="flex gap-[20px]">
+                <img
+                  src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                  class="w-[140px]"
+                />
+                <img
+                  src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                  class="w-[140px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full p-[50px_10px]">
+        <div class="max-w-[1100px] mx-auto">
+          <div
+            class="text-[clamp(25px,5vw,30px)] mb-[20px] text-[#363636] font-medium leading-loose"
+          >
+            Explore options near me
+          </div>
+          <div class="flex flex-col justify-center gap-[20px]">
+            <div
+              class="flex items-center justify-between p-[20px_24px] rounded-lg border-1 border-[rgb(232,232,232)] cursor-pointer"
+            >
+              <p
+                class="text-[#1c1c1c] text-[20px] leading-normal tracking-wide font-normal"
+              >
+                Popular cuisines near me
+              </p>
+              <i
+                class="fa-solid fa-chevron-down text-[15px] text-[#1c1c1c]"
+              ></i>
+            </div>
+            <div
+              class="flex items-center justify-between p-[20px_24px] rounded-lg border-1 border-[rgb(232,232,232)] cursor-pointer"
+            >
+              <p
+                class="text-[#1c1c1c] text-[20px] leading-normal tracking-wide font-normal"
+              >
+                Popular restaurant types near me
+              </p>
+              <i
+                class="fa-solid fa-chevron-down text-[15px] text-[#1c1c1c]"
+              ></i>
+            </div>
+            <div
+              class="flex items-center justify-between p-[20px_24px] rounded-lg border-1 border-[rgb(232,232,232)] cursor-pointer"
+            >
+              <p
+                class="text-[#1c1c1c] text-[20px] leading-normal tracking-wide font-normal"
+              >
+                Top restraunt chains
+              </p>
+              <i
+                class="fa-solid fa-chevron-down text-[15px] text-[#1c1c1c]"
+              ></i>
+            </div>
+            <div
+              class="flex items-center justify-between p-[20px_24px] rounded-lg border-1 border-[rgb(232,232,232)] cursor-pointer"
+            >
+              <p
+                class="text-[#1c1c1c] text-[20px] leading-normal tracking-wide font-normal"
+              >
+                Cities we deliver to
+              </p>
+              <i
+                class="fa-solid fa-chevron-down text-[15px] text-[#1c1c1c]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#f8f8f8] p-[50px_10px_25px]">
+      <section
+        class="flex flex-col w-[100%] items-start justify-between max-w-[1100px] mx-auto mb-[40px] gap-8 md:flex-row md:items-center"
+      >
+        <div class="w-[132px]">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&amp;crop=198:42;*,*"
+            alt="Zomato logo"
+            class="w-full"
+          />
+        </div>
+
+        <div class="flex items-center justify-center gap-5">
+          <div
+            class="flex items-center justify-center gap-[10px] p-[5px] rounded-sm border-1 border-[rgb(207,207,207)]"
+          >
+            <img src="./assets/images/india.png" alt="" class="w-[25px]" />
+            <p class="text-[1rem]">India</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div
+            class="flex items-center justify-center gap-[10px] p-[7px] rounded-sm border-1 border-[rgb(207,207,207)]"
+          >
+            <i class="fa-solid fa-globe globe text-[18px]"></i>
+            <p class="text-[1rem]">English</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1100px] mx-auto flex flex-wrap items-start justify-between mb-7"
+      >
+        <div class="mb-7 w-[45%] md:w-fit">
+          <h6
+            class="text-black text-[16px] uppercase font-normal tracking-wide m-[0px_0px_13px]"
+          >
+            ABOUT ZOMATO
+          </h6>
+          <ul>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Who we are
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Blog
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Work with us
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Investor Relations
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Report Fraud
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Contact us
+            </li>
+          </ul>
+        </div>
+        <div class="mb-7 w-[45%] md:w-fit">
+          <h6
+            class="text-black text-[16px] uppercase font-normal tracking-wide m-[0px_0px_13px]"
+          >
+            ZOMAVERSE
+          </h6>
+          <ul>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Zomato
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Blinkit
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Feeding India
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Hyperpure
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Zomaland
+            </li>
+          </ul>
+        </div>
+        <div class="mb-7 w-[45%] md:w-fit">
+          <h6
+            class="text-black text-[16px] uppercase font-normal tracking-wide m-[0px_0px_13px]"
+          >
+            For Restaurants
+          </h6>
+          <ul>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Partner With Us
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Apps for you
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-7 w-[45%] md:w-fit">
+          <h6
+            class="text-black text-[16px] uppercase font-normal tracking-wide m-[0px_0px_13px]"
+          >
+            Learn MorE
+          </h6>
+          <ul>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Privacy
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Security
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Terms
+            </li>
+            <li
+              class="cursor-pointer leading-normal tracking-wider font-light text-[#696969] my-1 text-[16px]"
+            >
+              Sitemap
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-7 w-[45%] md:w-fit">
+          <h6
+            class="text-black text-[16px] uppercase font-normal tracking-wide m-[0px_0px_13px]"
+          >
+            Social links
+          </h6>
+
+          <div>
+            <ul class="bg-white bg-clip-text flex gap-3 cursor-pointer">
+              <li>
+                <i class="fa-brands fa-linkedin text-[20px] text-black"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram text-[20px] text-black"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-x-twitter text-[20px] text-black"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-youtube text-[20px] text-black"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-facebook text-[20px] text-black"></i>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex items-start justify-center flex-col gap-4 mt-4 cursor-pointer"
+          >
+            <img
+              src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+              class="w-[140px]"
+            />
+            <img
+              src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+              class="w-[140px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1100px] mx-auto p-[25px_0_10px] flex justify-center flex-col gap-5 border-t-1 border-t-[rgb(207,207,207)] text-[14px] text-[rgb(79,79,79)] leading-normal"
+      >
+        <p>
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2024 © Zomato™ Ltd. All
+          rights reserved.
+        </p>
+        <p>Made by Ishan Ahmad</p>
+      </section>
+    </footer>
+  </body>
+</html>
